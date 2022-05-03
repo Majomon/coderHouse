@@ -7,29 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pardosera</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="contenedor" id="inicio">
 
         <header>
-            <img src="./assets/img/galeria/logo.jpg" alt="">
+            <img src="./assets/img/galeria/logo.jpg" alt="logo" class="logo">
             <h1>Artículos sublimados</h1>
         </header>
 
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/personalizados.html">Personalizados</a></li>
-                <li><a href="./pages/informacion-adicional.html">Información adicional</a></li>
-                <li><a href="./pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+            <ul class="ul-nav">
+                <li class="li-nav"><a href="index.html">Inicio</a></li>
+                <li class="li-nav"><a href="./pages/productos.html">Productos</a></li>
+                <li class="li-nav"><a href="./pages/personalizados.html">Personalizados</a></li>
+                <li class="li-nav"><a href="./pages/informacion-adicional.html">Información adicional</a></li>
+                <li class="li-nav"><a href="./pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
             </ul>
         </nav>
 
         <main>
-            <h2>Información útil</h2>
-            <div>
+            <h2 class="h2-main">Información útil</h2>
+            <div class="info-util-index">
                 <h3>¿Quiénes somos?</h3>
                 <p> Llevamos más de 15 años brindando soluciones en sublimación en gran formato, fabricación de
                     banderas,
@@ -42,7 +48,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="info-util-index">
                 <h3>¿Qué es sublimación?</h3>
                 <p>La sublimación es un proceso químico que consiste en el cambio de estado solido a estado gaseoso
                     sin
@@ -60,7 +66,7 @@
                     sublimacion.
                 </p>
             </div>
-            <div>
+            <div class="info-util-index">
 
                 <h3>Sublimación en cerámica, plástico, cartón, madera, alminio</h3>
                 <p>Usando la sublimacion podes personalizar una gran cantidad de materiales rigidos como por
@@ -71,7 +77,7 @@
                     Los requisitos básicos para que un producto sea sublimable son:
                 </p>
 
-                <ul>
+                <ul class="ul-main-index">
                     <li>Estar polimerizados (es decir, estar recubiertos de polímero o resina de poliester).</li>
                     <li>Debe poder ser expuestos a altas temperaturas durante cierto tiempo.</li>
                     <li>Debe poder soportar cierta presion sin romperse o dañarse.</li>
@@ -85,28 +91,40 @@
         </main>
 
         <footer>
-            <h3>Visitanos</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9686427117763!2d-58.42960868565686!3d-34.57965998046572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59ae587faaf%3A0x965823d3766b6a62!2sPalermo!5e0!3m2!1ses-419!2sar!4v1648751705188!5m2!1ses-419!2sar"
-                width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="mapita">
-            </iframe>
+            <div class="red-contacto">
 
-            <h3>Contactanos</h3>
-            <a href="mailto:pardoserasubli@gmail.com"><img src="./assets/img/icono-email.png" alt=""
-                    class="img-contacto"></a>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="./assets/img/icono-ws.png" alt=""
-                    class="img-contacto"></a>
+                <h3>Visitanos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9686427117763!2d-58.42960868565686!3d-34.57965998046572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59ae587faaf%3A0x965823d3766b6a62!2sPalermo!5e0!3m2!1ses-419!2sar!4v1648751705188!5m2!1ses-419!2sar"
+                    width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="mapita">
+                </iframe>
+            </div>
 
-            <h3>Seguinos</h3>
-            <a href="https://facebook.com/pardosera/" target="_blank"><img src="./assets/img/icono-facebook.PNG" alt=""
-                    class="img-contacto"></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><img src="./assets/img/icono-twitter.PNG" alt=""
-                    class="img-contacto"></a>
-            <a href="https://www.instagram.com/pardosera/" target="_blank"><img src="./assets/img/icono-instagram.PNG"
-                    alt="" class="img-contacto"></a>
+            <div class="red-contacto">
 
-            <div>
+                <h3>Contactanos</h3>
+                <a href="mailto:pardoserasubli@gmail.com"><img src="./assets/img/icono-email.png" alt=""
+                        class="img-contacto"></a>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="./assets/img/icono-ws.png" alt=""
+                        class="img-contacto"></a>
+
+            </div>
+
+
+            <div class="red-contacto">
+
+                <h3>Seguinos</h3>
+                <a href="https://facebook.com/pardosera/" target="_blank"><img src="./assets/img/icono-facebook.PNG"
+                        alt="" class="img-contacto"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="./assets/img/icono-twitter.PNG" alt=""
+                        class="img-contacto"></a>
+                <a href="https://www.instagram.com/pardosera/" target="_blank"><img
+                        src="./assets/img/icono-instagram.PNG" alt="" class="img-contacto"></a>
+
+            </div>
+
+            <div class="diseñador">
                 <a href="#inicio">Entrega: Monzon Mauricio - Desarrollo Web</a>
             </div>
         </footer>
