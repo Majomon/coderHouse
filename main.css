@@ -240,19 +240,95 @@ td {
 
 @media screen and (min-width: 1024px) {
 
+    /* Productos */
+
+    .producto {
+        margin-bottom: 1.5rem;
+    }
 
     /* Informacion adicional */
-
 
     .caja-videos {
         padding: 1rem 4rem;
     }
 
-    .caja-videos iframe{
-        width: 900px;
+    .caja-videos iframe {
+        width: 500px;
         height: 500px;
         margin: 1rem 0rem;
         box-shadow: 10px 10px 10px black;
     }
-}
 
+    /* Efectos */
+
+    /* Productos */
+    .producto {
+        transition-duration: 0.5s;
+        transition-delay: 0.1s;
+        transition-timing-function: ease;
+    }
+
+    .producto:hover {
+        transform: scale(1.1);
+        border: solid white 5px;
+    }
+
+    /* Footer */
+    .img-contacto {
+        transition-duration: 0.8s;
+        transition-timing-function: ease;
+    }
+
+    .img-contacto:hover {
+        transform: rotate(360deg);
+    }
+
+    /* Personalizado */
+    .img-personalizado img {
+        transition-duration: 0.5s;
+        transition-delay: 0.1s;
+        transition-timing-function: ease;
+    }
+
+    .img-personalizado img:hover {
+        transform: scale(1.1);
+        border: solid white 5px;
+        border-radius: 1rem;
+    }
+
+    /* Nav */
+    .li-nav a{
+        font-size: 20px;
+    }
+
+    .li-nav a:hover{
+        color: rgb(17, 179, 103);
+    }
+
+
+    .logo{
+        animation-name: movimiento-logo;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-delay: .1s;
+    }
+
+    @keyframes movimiento-logo {
+        0%{
+            transform: translate(180px);
+            opacity: 0;
+        }
+
+        50%{
+            transform: translate(85px);
+            opacity: .5;
+        }
+
+        100%{
+            transform: translate(0px);
+            opacity: 1;
+        }
+
+    }
+}
