@@ -197,6 +197,15 @@ td {
 /* Empieza Media query tablet */
 
 @media screen and (min-width: 768px) {
+    /* Personalizados */
+
+    .main-personalizado div img {
+        width: 350px;
+        height: 350px;
+        margin: 0.8rem 1rem;
+
+    }
+
     /* Productos */
 
     .main-producto {
@@ -216,14 +225,13 @@ td {
 
     /* Informacion adicional */
 
-
     .videos {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .caja-videos{
+    .caja-videos {
         padding: 0.6rem 1.8rem;
     }
 }
@@ -231,33 +239,19 @@ td {
 /* Empieza Media query desktop */
 
 @media screen and (min-width: 1024px) {
-    /* Productos */
 
-    .main-producto {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .art {
-        width: 45vw;
-    }
-
-    .producto {
-        width: 300px;
-        height: 300px;
-    }
 
     /* Informacion adicional */
 
 
-    .videos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .caja-videos {
+        padding: 1rem 4rem;
     }
 
-    .caja-videos{
-        padding: 0.6rem 1.8rem;
+    .caja-videos iframe{
+        width: 900px;
+        height: 500px;
+        margin: 1rem 0rem;
+        box-shadow: 10px 10px 10px black;
     }
 }
